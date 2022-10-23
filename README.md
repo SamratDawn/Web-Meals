@@ -1,10 +1,12 @@
 # Web Meals
 
-## Overview
+![NL21-Bridges-Hokkai-Suisan-banner](https://user-images.githubusercontent.com/89309086/197384613-d26d7cee-1d53-42ff-baf6-8c224f492bce.jpg)
+
+# Overview
 
 Web Meals is a food delivery app which is created over the ReactJS library. It is an application that utilizes modern ReactJS hooks and features like ContextAPI to produce lightweight but efficient functionalities and executability. The app itself is connected to firebase at the backend from where it fetches its menu items and pricings. When a user places an order, the details are also relayed to the same.
 
-## Sections
+# Sections
 
 This application employs three main sections. They are as follows-
 
@@ -13,6 +15,16 @@ This application employs three main sections. They are as follows-
 2.**Cart**- This section contains all the items selected by the user along with their respective quantities. This also showcases the total cart value. The cart option comes with two options- Order and Cancel. Clicking on the Cancel button will result in exiting the cart overlay and will take the user back to the home page. Clicking on the Order button will open up another Checkout section in the same overlay.
 
 3.**Checkout**- The checkout section merged with the cart section prompts the user to add their name and address credentials. The checkout section comes with a Confirm button and checks for the validity of each input filed when the Confirm button is triggered. If somehow one or multiple fields are invalid, an error message is broadcasted below each invalid entry field. If there's no error, the cart order is sent to the backend and the user is furnished with a success message.
+
+# Run Locally
+
+Download the project and run terminal in the file path. In the terminal, execute-
+```
+1.1. npm install
+```
+```
+1.2. npm start
+```
 
 # UI of the Web Application
 
