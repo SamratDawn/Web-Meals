@@ -2,7 +2,7 @@ import classes from "./Checkout.module.css";
 import { useRef, useState } from "react";
 
 const isEmpty = (value) => value.trim() === "";
-const isNotFiveChars = (value) => value.trim().length !== 5;
+const isNotSixChars = (value) => value.trim().length !== 6;
 const Checkout = (props) => {
   const nameInputRef = useRef();
   const streetInputRef = useRef();
@@ -26,7 +26,7 @@ const Checkout = (props) => {
 
     const enterredNameIsValid = !isEmpty(enterredName);
     const enterredStreetIsValid = !isEmpty(enterredStreet);
-    const enterredPostalCodeIsValid = !isNotFiveChars(enterredPostalCode);
+    const enterredPostalCodeIsValid = !isNotSixChars(enterredPostalCode);
     const enterredCityIsValid = !isEmpty(enterredCity);
 
     setFormInputsValidity({
